@@ -26,7 +26,7 @@ def parse_line(line):
     line = line.split("#", 1)[0].strip()
     parts = line.split(" ")
     host = parts[1 if len(parts) > 1 else 0].strip()
-    if host == '0.0.0.0' or not is_valid_domain_name(host):
+    if host == "0.0.0.0" or not is_valid_domain_name(host):
         return None
 
     return host
