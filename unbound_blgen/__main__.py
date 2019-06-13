@@ -16,7 +16,6 @@ def is_valid_domain_name(domain):
 
 
 def parse_line(line):
-    org = line
     # Ignore empty and commented lines.
     line = line.strip()
     if (not line) or line[0] == "#":
